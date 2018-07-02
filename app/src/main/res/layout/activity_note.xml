@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dairy.successemmanuel.personaldairyy.notes.NoteActivity">
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_done_all_24"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"/>
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_cancel_24"
+                android:layout_toStartOf="@+id/img1"
+                android:layout_toLeftOf="@+id/img1"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"/>
+
+        <LinearLayout
+            android:layout_below="@+id/img2"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/noteTitle"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/title"/>
+
+            <EditText
+                android:hint="@string/noteNew"
+                android:id="@+id/note"
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+</RelativeLayout>

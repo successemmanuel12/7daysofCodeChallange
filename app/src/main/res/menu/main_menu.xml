@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_new_note"
+        android:title="@string/main_button"
+        android:orderInCategory="1"
+        app:showAsAction="never">
+
+    </item>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        android:alphabeticShortcut="s"
+        android:numericShortcut="2">
+
+    </item>
+</menu>
